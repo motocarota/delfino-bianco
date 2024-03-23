@@ -10,6 +10,6 @@
     <p>
       <a href="mailto:ristorantedelifnobianco@gmail.com?subject=informazioni" target="_blank">ristorantedelifnobianco@gmail.com</a>
     </p>
-    <p><a href="www.ristorantedelifnobianco.it">www.ristorantedelifnobianco.it</a></p>
+    <p>www.ristorantedelifnobianco.it</p>
   </div>
 </footer>
