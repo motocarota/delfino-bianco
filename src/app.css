@@ -1,0 +1,91 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .josefin-sans-db {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  * {
+    font-family: "Josefin Sans";
+    color: #3c4073;
+    font-size: 18px;
+  }
+
+  li {
+    font-weight: 200;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 200;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.7rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1.2rem;
+  }
+
+  section {
+    margin: 3rem auto;
+    max-width: 900px;
+    text-align: center;
+  }
+
+  section.fw {
+    max-width: 100vw;
+  }
+
+  #top {
+    background-image: url(img/delfino.webp);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
+    max-width: 886px
+  }
+
+  .josefin-sans-db {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  .title {
+    max-width: 55%;
+    margin: auto;
+    padding-top: 150px;
+  }
+  
+  .azure-bg {
+    background: #e9eaf7;
+    padding: 10px;
+  }
+
+  .w-33 {
+    width: 30%
+  }
+
+  .saturation-down {
+    filter: saturate(0.5);
+  }
+
+  .hhh {
+    filter: grayscale(0.7);
+  }
+  .hhh:hover {
+    filter: none;
+  }
+}
