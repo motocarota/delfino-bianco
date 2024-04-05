@@ -7,7 +7,7 @@
 </script>
 
 <Hero />
-<WineMenu />
 <Features />
 <Gallery />
+<WineMenu />
 <Contacts />
