@@ -89,11 +89,11 @@
 
 <section id="gallery">
   <div class="flex items-center justify-center py-4 md:py-8 flex-wrap gap-3 mb-3 mx-auto">
-    <Button pill size="xl" outline on:click={() => setIndex(0)}>Pizzeria</Button>
-    <Button pill size="xl" outline on:click={() => setIndex(1)}>Dolci</Button>
-    <Button pill size="xl" outline on:click={() => setIndex(2)}>Ristorante</Button>
-    <Button pill size="xl" outline on:click={() => setIndex(3)}>Cucina</Button>
-    <Button pill size="xl" outline on:click={() => setIndex(4)}>Location</Button>
+    <Button color="light" pill size="xl" outline on:click={() => setIndex(0)}>Pizzeria</Button>
+    <Button color="light" pill size="xl" outline on:click={() => setIndex(1)}>Dolci</Button>
+    <Button color="light" pill size="xl" outline on:click={() => setIndex(2)}>Ristorante</Button>
+    <Button color="light" pill size="xl" outline on:click={() => setIndex(3)}>Cucina</Button>
+    <Button color="light" pill size="xl" outline on:click={() => setIndex(4)}>Location</Button>
   </div>
 
   <Gallery class="gap-2 grid-cols-1 md:grid-cols-2">
