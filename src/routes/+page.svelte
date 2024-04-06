@@ -4,10 +4,12 @@
 	import Gallery from "../lib/Gallery.svelte";
 	import Features from '../lib/Features.svelte'
 	import Contacts from "../lib/Contacts.svelte";
+    import FwImage from "../lib/FWImage.svelte";
 </script>
 
 <Hero />
-<Features />
+<FwImage image="sestri" />
 <Gallery />
 <WineMenu />
 <Contacts />
+<Features />

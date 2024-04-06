@@ -10,3 +10,12 @@ export const ORARIO = [
   { day: "sabato", from: "17:30", to: "23:00" },
   { day: "domenica", from: "17:30", to: "23:00" },
 ]
+
+export const FEATURES = [
+  "Eventi",
+  "Banchetti",
+  "Cocktails",
+  "Cerimonie",
+  "Aperitivi",
+  "Lunch Menu",
+]
