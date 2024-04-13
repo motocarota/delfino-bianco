@@ -10,7 +10,7 @@
 <div class="flex m-5 p-5 space-x-6 rtl:space-x-reverse sm:justify-center sm:mt-0">
   {#each socials as s}
     <FooterIcon href={s.url} target="_blank">
-      <img src={`/img/${s.id}.svg`} alt={s.id} width={40} height={40} />
+      <img src={`/img/${s.id}.svg`} alt={s.id} width={36} height={36} />
     </FooterIcon>
   {/each}
 </div>
