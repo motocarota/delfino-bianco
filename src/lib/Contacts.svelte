@@ -8,7 +8,7 @@
   <h1 class="mt-5">Contatti</h1>
   <div class="flex justify-center gap-4 flex-wrap">
     <Card>
-      <h4>orario di apertura</h4>
+      <h4>Orario di Apertura</h4>
       <Table noborder={true}>
         <TableBody>
           {#each ORARIO as o}

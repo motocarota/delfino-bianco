@@ -11,7 +11,7 @@
 <Hero />
 <!-- <Navigation /> -->
 <FwImage image="sestri" />
-<Gallery />
 <WineMenu />
+<Gallery />
 <Contacts />
 <Features />

@@ -2,9 +2,9 @@
   import { Card } from "flowbite-svelte";
   const links = [
     { id: 'menu', label: 'La Carta' },
-    { id: 'pizza', label: 'La pizzeria' },
-    { id: 'bar', label: 'Bar menú & cocktail' },
-    { id: 'wine', label: 'Carta del vino' },
+    { id: 'pizza', label: 'La Pizzeria' },
+    { id: 'bar', label: 'Bar Menú & Cocktail' },
+    { id: 'wine', label: 'Carta del Vino' },
   ]
 </script>
 
