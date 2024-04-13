@@ -1,4 +1,5 @@
 <script>
+    import SocialLinks from "./SocialLinks.svelte";
 </script>
 
 <footer class="bg-white text-slate-800 p pb-10">
@@ -8,8 +9,9 @@
     <p>via XX Settembre 12, 16039 Sestri Levante (Ge) ITALY</p>
     <p>Tel. +39 0185450837 - 328 1467737</p>
     <p>
-      <a href="mailto:ristorantedelifnobianco@gmail.com?subject=informazioni" target="_blank">ristorantedelifnobianco@gmail.com</a>
+      <a href="mailto:ristorantedelfinobianco@gmail.com?subject=informazioni" target="_blank">ristorantedelfinobianco@gmail.com</a>
     </p>
-    <p>www.ristorantedelifnobianco.it</p>
+    <p>www.ristorantedelfinobianco.it</p>
+    <SocialLinks />
   </div>
 </footer>

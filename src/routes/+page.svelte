@@ -1,13 +1,15 @@
 <script>
 	import Hero from "../lib/Hero.svelte";
+	// import Navigation from '../lib/Navigation.svelte';
 	import WineMenu from '../lib/WineMenu.svelte';
 	import Gallery from "../lib/Gallery.svelte";
 	import Features from '../lib/Features.svelte'
 	import Contacts from "../lib/Contacts.svelte";
-    import FwImage from "../lib/FWImage.svelte";
+	import FwImage from "../lib/FWImage.svelte";
 </script>
 
 <Hero />
+<!-- <Navigation /> -->
 <FwImage image="sestri" />
 <Gallery />
 <WineMenu />

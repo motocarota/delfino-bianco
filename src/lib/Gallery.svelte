@@ -1,6 +1,5 @@
 <script>
-  import { Button, Gallery } from 'flowbite-svelte';
-  import chunkArray from './chunkArray';
+  import { Button, Carousel } from 'flowbite-svelte';
 
   const images = [[
     { alt: 'pizza', src: 'img/pizza-1.webp' },
@@ -46,16 +45,16 @@
     // { alt: 'ristorante', src: 'img/risto-17.webp' },
     // { alt: 'ristorante', src: 'img/risto-18.webp' },
   ],
-  [
-    // { alt: 'cucina', src: 'img/cucina-1.webp' },
-    // { alt: 'cucina', src: 'img/cucina-2.webp' },
-    { alt: 'cucina', src: 'img/cucina-5.webp' },
-    { alt: 'cucina', src: 'img/cucina-4.webp' },
-    { alt: 'cucina', src: 'img/cucina-3.webp' },
-    { alt: 'cucina', src: 'img/cucina-6.webp' },
-    // { alt: 'cucina', src: 'img/cucina-7.webp' },
-    // { alt: 'cucina', src: 'img/cucina-8.webp' },
-  ],
+  // [
+  //   // { alt: 'cucina', src: 'img/cucina-1.webp' },
+  //   // { alt: 'cucina', src: 'img/cucina-2.webp' },
+  //   { alt: 'cucina', src: 'img/cucina-5.webp' },
+  //   { alt: 'cucina', src: 'img/cucina-4.webp' },
+  //   { alt: 'cucina', src: 'img/cucina-3.webp' },
+  //   { alt: 'cucina', src: 'img/cucina-6.webp' },
+  //   // { alt: 'cucina', src: 'img/cucina-7.webp' },
+  //   // { alt: 'cucina', src: 'img/cucina-8.webp' },
+  // ],
   [
     { alt: 'locale', src: 'img/locale-1.webp' },
     // { alt: 'locale', src: 'img/locale-2.webp' },
@@ -74,30 +73,30 @@
     // { alt: 'locale', src: 'img/locale-15.webp' },
   ]
 ]
-  function setIndex(i) {
-    const gallery = images[i];
-    const res = chunkArray(gallery, 2)
-    g1 = res[0]
-    g2 = res[1]
-  }
+const sections = [
+  "Pizzeria",
+  "Dolci",
+  "Ristorante",
+  "Location",
+]
+let index = 0;
+let gallery = images[index];
 
-  let g1 = [];
-  let g2 = [];
+function setIndex(i) {
+  index = i;
+  gallery = images[i];
+}
 
-  setIndex(0);
 </script>
 
 <section id="gallery">
   <div class="flex items-center justify-center py-4 md:py-8 flex-wrap gap-3 mb-3 mx-auto">
-    <Button color="light" pill size="xl" outline on:click={() => setIndex(0)}>Pizzeria</Button>
-    <Button color="light" pill size="xl" outline on:click={() => setIndex(1)}>Dolci</Button>
-    <Button color="light" pill size="xl" outline on:click={() => setIndex(2)}>Ristorante</Button>
-    <Button color="light" pill size="xl" outline on:click={() => setIndex(3)}>Cucina</Button>
-    <Button color="light" pill size="xl" outline on:click={() => setIndex(4)}>Location</Button>
+    {#each sections as section, i}
+      <Button color="light" pill size="xl" outline on:click={() => setIndex(i)}>{section}</Button>
+    {/each}
   </div>
 
-  <Gallery class="gap-2 grid-cols-1 md:grid-cols-2">
-    <Gallery items={g1} />
-    <Gallery items={g2} />
-  </Gallery>
+  <div class="max-w-4xl">
+    <Carousel images={gallery} duration="5000" />
+  </div>
 </section>

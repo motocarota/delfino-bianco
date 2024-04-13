@@ -17,5 +17,5 @@ export const FEATURES = [
   "Cocktails",
   "Cerimonie",
   "Aperitivi",
-  "Lunch Menu",
+  "Lunch Menù",
 ]

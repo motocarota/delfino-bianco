@@ -1,12 +1,18 @@
 <script>
-    import { Card } from "flowbite-svelte";
+  import { Card } from "flowbite-svelte";
+  const links = [
+    { id: 'menu', label: 'La Carta' },
+    { id: 'pizza', label: 'La pizzeria' },
+    { id: 'bar', label: 'Bar menú & cocktail' },
+    { id: 'wine', label: 'Carta del vino' },
+  ]
 </script>
 
 <section id="menu">
-  <h1 class="mt-5">Menu</h1>
+  <h1 class="mt-5">Menù</h1>
   <div class="flex justify-center gap-4 flex-wrap">
-    <Card img="img/menu.webp" href="files/menu.pdf" target="_blank">Scarica il menu del ristorante</Card>
-    <Card img="img/bar.webp" href="files/bar.pdf" target="_blank">Scarica il menu del bar</Card>
-    <Card img="img/wine.webp" href="files/vini.pdf" target="_blank">Scarica il menu dei vini</Card>
+    {#each links as link}
+      <Card img={`img/${link.id}.webp`} href={`files/${link.id}.pdf`} target="_blank">{link.label}</Card>
+    {/each}
   </div>
 </section>
