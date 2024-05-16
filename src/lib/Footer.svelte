@@ -1,7 +1,7 @@
 <footer class="bg-white text-slate-800 p pb-10">
-  <div class="max-w-screen-lg py-10 mx-auto font-thin text-center">
-    <h1 class="mb-4">Delfino Bianco</h1>
-    <p class="mb-6 text-xl">Ristorante Bar Pizzeria</p>
+  <div class="max-w-screen-lg mt-10 pt-10 mx-auto font-thin text-center">
+    <h1>Delfino Bianco</h1>
+    <p class="mb-4 text-xl">Ristorante Bar Pizzeria</p>
     <p>www.ristorantedelfinobianco.it</p>
     <p>
       Tel. <a href="tel:00390185450837">+39.0185.450.837</a> -
