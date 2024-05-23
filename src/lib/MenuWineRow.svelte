@@ -10,7 +10,7 @@
     <th colspan="3" class="pt-5 text-xl">{name}</th>
   {:else}
     <td><span class="text-xl">{name}</span> {type} - {canteen} - {location}</td>
-    <td>{price}</td>
+    <td class="price">{price}</td>
   {/if}
 </tr>
 
@@ -20,5 +20,8 @@
   }
   td {
     text-align: left;
+  }
+  .price {
+    min-width: 80px;
   }
 </style>
