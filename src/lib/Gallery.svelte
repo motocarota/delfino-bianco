@@ -26,7 +26,7 @@
 ]
 const sections = [
   "Pizzeria",
-  "Dolci",
+  // "Dolci",
   "Ristorante",
   "Location",
 ]
