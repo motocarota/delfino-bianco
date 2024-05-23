@@ -45,5 +45,7 @@
   table {
     width: 90%;
     margin: 3rem auto;
+    border-collapse: separate;
+    border-spacing: 0 1em;
   }
 </style>
