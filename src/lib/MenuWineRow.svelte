@@ -10,7 +10,9 @@
   {#if !price}
     <th colspan="4" class="pt-5 text-xl">{name}</th>
   {:else}
-    <td style="background: {color}; width: 35px; border-radius: 30px"> </td>
+    <td>
+      <div style="background: {color}" class='dot'></div>
+    </td>
     <td><span class="text-xl">{name}</span> {type} - {canteen} - {location}</td>
     <td class="price">{price}</td>
   {/if}
@@ -26,5 +28,10 @@
   }
   .price {
     min-width: 80px;
+  }
+  .dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 15px
   }
 </style>
