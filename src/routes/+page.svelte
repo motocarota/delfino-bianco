@@ -1,6 +1,6 @@
 <script>
 	import Hero from "../lib/Hero.svelte";
-	import WineMenu from '../lib/WineMenu.svelte';
+	import Menus from '../lib/Menus.svelte';
 	import Gallery from "../lib/Gallery.svelte";
 	import Features from '../lib/Features.svelte'
 	import Contacts from "../lib/Contacts.svelte";
@@ -10,7 +10,7 @@
 <Hero />
 <!-- <Navigation /> -->
 <FwImage image="sestri2" />
-<WineMenu />
+<Menus />
 <Gallery />
 <Contacts />
 <Features />

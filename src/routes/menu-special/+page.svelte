@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  import MenuSpecialRow from "../../lib/MenuSpecialRow.svelte";
+  import MenuSpecialRow from "../../lib/MenuSpecialRow.svelte";  
   const endpoint = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRsqIM7bI1QSk4J7bJlAzgvUks8ZtzXrOSNezIQ5kYo7Cu69pcq9o4sFwX5_cnwbotWwOaSYFoVlVMA/pub?gid=2022557443&single=true&output=tsv";
   let posts = [];
   let loading = true;
