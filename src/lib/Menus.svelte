@@ -3,15 +3,11 @@
   import { Card } from "flowbite-svelte";
   const links = [
     { id: "menu", label: "La Carta", link: "files/menu.pdf" },
-    { id: "pizza", label: "La Pizzeria", link: "files/pizza.pdf" },
+    { id: "special", label: "Special", link: "menu-special" },
     { id: "bar", label: "Bar Menú & Cocktail", link: "files/bar.pdf" },
+    { id: "pizza", label: "La Pizzeria", link: "files/pizza.pdf" },
     { id: "wine", label: "Carta del Vino", link: "menu-vini" },
     { id: "birre", label: "Carta delle Birre", link: "files/birre.pdf" },
-    {
-      id: "special",
-      label: "Special del giorno - Lo Chef consiglia",
-      link: "menu-special",
-    },
   ];
   // fetch menu config
   const endpoint =
@@ -30,7 +26,7 @@
           ...acc,
           [k]: v === "TRUE",
         }),
-        {},
+        {}
       );
   });
 </script>
