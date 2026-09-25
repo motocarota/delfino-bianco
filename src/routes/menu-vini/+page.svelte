@@ -1,6 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import MenuWineRow from "../../lib/MenuWineRow.svelte";
+  import Seo from "../../lib/Seo.svelte";
   const endpoint = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRsqIM7bI1QSk4J7bJlAzgvUks8ZtzXrOSNezIQ5kYo7Cu69pcq9o4sFwX5_cnwbotWwOaSYFoVlVMA/pub?gid=0&single=true&output=tsv";
   let posts = [];
   let loading = true;
@@ -15,9 +16,16 @@
 
 </script>
 
+<Seo
+  title="Carta dei Vini - Delfino Bianco Sestri Levante"
+  description="La carta dei vini di Delfino Bianco: etichette liguri e italiane selezionate per accompagnare i piatti di mare a Sestri Levante."
+  path="/menu-vini"
+  image="img/liguria.webp"
+/>
+
 <main>
-  <h1>Delfino Bianco</h1>
-  <h3>Carta dei vini</h3>
+  <h1>Carta dei Vini</h1>
+  <h2>Delfino Bianco</h2>
   <img src="img/liguria.webp" alt="liguria" />
   <table>
     {#if loading}

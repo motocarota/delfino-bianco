@@ -1,6 +1,6 @@
 <footer class="bg-white text-slate-800 p pb-10">
   <div class="max-w-screen-lg mt-10 pt-10 mx-auto font-thin text-center">
-    <h1>Delfino Bianco</h1>
+    <h2>Delfino Bianco</h2>
     <p class="mb-4 text-xl">Ristorante Bar Pizzeria</p>
     <p>www.ristorantedelfinobianco.it</p>
     <p>

@@ -1,6 +1,7 @@
 <script>
   import { onMount } from "svelte";
-  import MenuSpecialRow from "../../lib/MenuSpecialRow.svelte";  
+  import MenuSpecialRow from "../../lib/MenuSpecialRow.svelte";
+  import Seo from "../../lib/Seo.svelte";
   const endpoint = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRsqIM7bI1QSk4J7bJlAzgvUks8ZtzXrOSNezIQ5kYo7Cu69pcq9o4sFwX5_cnwbotWwOaSYFoVlVMA/pub?gid=2022557443&single=true&output=tsv";
   let posts = [];
   let loading = true;
@@ -15,9 +16,16 @@
 
 </script>
 
+<Seo
+  title="Menu Special - Delfino Bianco Sestri Levante"
+  description="Scopri il menu special di Delfino Bianco: piatti di mare e specialità liguri del giorno a Sestri Levante."
+  path="/menu-special"
+  image="img/menu-word.webp"
+/>
+
 <main>
-  <h1>Delfino Bianco</h1>
-  <h3>Menu Special</h3>
+  <h1>Menu Special</h1>
+  <h2>Delfino Bianco</h2>
   <img src="img/menu-word.webp" alt="menu" />
   <table>
     {#if loading}

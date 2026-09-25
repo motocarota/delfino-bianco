@@ -6,12 +6,12 @@
 </script>
 
 <section>
-  <h1 class="mt-5">Come trovarci:</h1>
+  <h2 class="mt-5">Come trovarci:</h2>
   <Socials />
   <div class="flex justify-center gap-4 flex-wrap">
     <Card target="_blank" style="background-image: url(img/delfino.webp); background-position: center; background-size: cover;">
       <div class="py-10 mx-auto font-thin text-center">
-        <h1 class="mb-4">Delfino Bianco</h1>
+        <h3 class="mb-4">Delfino Bianco</h3>
         
         <p>via XX Settembre 12</p>
         <p>16039 Sestri Levante (GE)</p>

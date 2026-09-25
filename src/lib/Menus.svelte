@@ -32,7 +32,7 @@
 </script>
 
 <section id="menu">
-  <h1 class="mt-5">Menù</h1>
+  <h2 class="mt-5">Menù</h2>
   <div class="flex justify-center gap-4 flex-wrap">
     {#each links as link}
       {#if config[link.id]}
