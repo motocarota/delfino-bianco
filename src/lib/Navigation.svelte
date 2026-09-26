@@ -3,11 +3,11 @@
     { label: "Ristorante", to: "" },
     { label: "Bar", to: "" },
     { label: "Pizzeria", to: "" },
-  ]
+  ];
 </script>
 
-  <div class="flex justify-around max-w-[351px] mx-auto">
-    {#each links as link}
-      <p class="text-xl">{link.label}</p>
-    {/each}
-  </div>
+<div class="flex justify-around max-w-[351px] mx-auto my-4">
+  {#each links as link}
+    <p class="text-xl">{link.label}</p>
+  {/each}
+</div>

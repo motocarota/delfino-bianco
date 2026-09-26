@@ -19,9 +19,8 @@
   Delfino Bianco - Ristorante, Pizzeria e Bar a Sestri Levante
 </h1>
 
-<FwImage image="bg" height={960}>
-  <Navigation />
-</FwImage>
+<Navigation />
+<img src="/img/bg.webp" height="100vh" alt="logo delfino bianco" />
 
 <Menus />
 <Gallery />
